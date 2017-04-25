@@ -1,0 +1,11 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "author": "extrategy",
+  "license": "ISC",
+  "devDependencies": {
+    "lodash": "4.17.4",
+    "moment": "2.18.1"
+  }
+}
