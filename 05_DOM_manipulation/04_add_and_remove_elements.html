@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>04 add and remove elements</title>
-        <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="../../../node_modules/lodash/lodash.min.js"></script>
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../node_modules/lodash/lodash.min.js"></script>
         <script type="text/javascript">
             var printInPage = function(params){
                 var title = params.title.toUpperCase();
@@ -72,7 +72,7 @@
                     if(elementToRemove){
                         $(elementToRemove).remove();
                     }else{
-                        console.log("No element to remove with jQuery left");   
+                        console.log("No element to remove with jQuery left");
                     }
                 });
             })();
@@ -123,8 +123,8 @@
         <h3>Using createElement and appendChild</h3>
         <div class="examples usingCreateElementAndAppendChild">
             <ul>
-                
-            </ul>            
+
+            </ul>
         </div>
         <script type="text/javascript">
             (function(){
@@ -144,7 +144,7 @@
         <script type="text/javascript">
             var liTemplate = _.template("<li><%= text %></li>");
             var ulElement = document.querySelector(".usingLodashUnderscoreTemplate > ul");
-            
+
             _.each(["First template li", "Second template li"], function(textArray){
                 ulElement.innerHTML += liTemplate({ text: textArray});
             });
@@ -154,7 +154,7 @@
         <h3>Using data from input</h3>
         <div class="examples usingDataFromInput">
             <ul>
-                
+
             </ul>
         </div>
         <button class="addFromInput">ADD</button>
@@ -165,7 +165,7 @@
 
                 var liTemplate = _.template("<li><%= text %></li>");
                 var ulElement = document.querySelector(".usingDataFromInput > ul");
-                
+
                 document.querySelector(".addFromInput").onclick = function(){
                     var text = input.value || "default";
                     ulElement.innerHTML += liTemplate({ text: text});

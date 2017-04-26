@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>02 selectors composition</title>
-        <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="../../../node_modules/lodash/lodash.min.js"></script>
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../node_modules/lodash/lodash.min.js"></script>
         <script type="text/javascript">
             var printInPage = function(params){
                 var title = params.title.toUpperCase();
@@ -76,7 +76,7 @@
                 jQueryBazNested: jQueryBazNested.get()
             });
         </script>
-        
+
         <h1>COMBINE</h1>
         <div class="examples combine">
             <span class="foo">foo span</span>
@@ -115,7 +115,7 @@
             <span class="bar">bar span</span>
             <div class="bar">baz div</div>
             <p class="bar">baz p</p>
-            
+
             <span class="baz">baz span</span>
             <div class="baz">baz div</div>
             <p class="baz">baz p</p>
@@ -123,7 +123,7 @@
         </div>
         <script type="text/javascript">
             var spanAndDiv = document.querySelectorAll(".multipleSelection > span, .multipleSelection > div");
-            
+
             var jQuerySpanAndDiv = $(".multipleSelection > span, .multipleSelection > div");
 
             printInPage({
@@ -141,7 +141,7 @@
         </div>
         <script type="text/javascript">
             var fooNotDiv = document.querySelectorAll(".negation > .foo:not(div)");
-            
+
             var jQueryFooNotDiv = $(".negation > .foo:not(div)");
 
             printInPage({

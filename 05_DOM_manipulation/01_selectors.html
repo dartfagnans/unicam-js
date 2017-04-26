@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>01 selectors</title>
-        <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="../../../node_modules/lodash/lodash.min.js"></script>
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../node_modules/lodash/lodash.min.js"></script>
         <script type="text/javascript">
             var printInPage = function(params){
                 var title = params.title.toUpperCase();
@@ -57,7 +57,7 @@
 
             var jQueryPairSpans = $(".evenSpan");
             var jQueryOddSpans = $(".oddSpan");
-            
+
             printInPage({
                 title:"class",
                 pairSpans: pairSpans,
@@ -66,7 +66,7 @@
                 jQueryOddSpans: jQueryOddSpans.get()
             });
         </script>
-        
+
         <h1>TAG NAME</h1>
         <div class="examples">
             <span>my span 1</span>
@@ -92,7 +92,7 @@
                 jQueryDiv: jQueryDiv.get()
             });
         </script>
-        
+
         <h1>NAME</h1>
         <div class="examples">
             <div name="firtsDiv" type="text">my first div with name</div>
@@ -120,7 +120,7 @@
         </div>
         <script type="text/javascript">
             var spanWithRole = document.querySelectorAll("[role='myCustomRole']");
-            
+
             var jQuerySpanWithRole = $("[role='myCustomRole']");
 
             printInPage({
@@ -137,7 +137,7 @@
         <script type="text/javascript">
             var divWithId = document.getElementById("myDivId");
             var divWithIdQuery = document.querySelectorAll("#myDivId");
-                        
+
             var jQueryDivWithId = $("#myDivId");
 
             printInPage({
@@ -147,7 +147,7 @@
                 jQueryDivWithId: jQueryDivWithId.get()
             });
         </script>
-        
+
         <h1>ATTRIBUTE &amp; VALUE OF ATTRIBUTE</h1>
         <div class="examples">
             <div data-myCustomAttribute="attributeValue">div with custom attribute</div>
@@ -164,7 +164,7 @@
 
             var firstDivWithTitle = document.querySelectorAll("[title=divTitle]");
             var secondDivWithTitle = document.querySelectorAll("[title='second div title']");
-            
+
             var jQueryFirstDivWithTitle = $("[title=divTitle]");
             var jQuerySecondDivWithTitle = $("[title='second div title']");
 
@@ -175,7 +175,7 @@
                 jQueryDivWithCustomAttribute: jQueryDivWithCustomAttribute.get(),
                 jQueryDivWithTitle: jQueryDivWithTitle.get()
             });
-            
+
             printInPage({
                 title:"value of attribute",
                 firstDivWithTitle: firstDivWithTitle,

@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>03 get and set properties</title>
-        <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="../../../node_modules/lodash/lodash.min.js"></script>
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../node_modules/lodash/lodash.min.js"></script>
         <script type="text/javascript">
             var printInPage = function(params){
                 var title = params.title.toUpperCase();
@@ -191,7 +191,7 @@
             (function(){
                 var parent = document.querySelector(".divChild").parentElement;
                 var jQueryParent = $($(".divChild")[0]).parent();
-                
+
                 var parentTitle = parent.title;
                 var jQueryParentTitle = jQueryParent[0].title;
 
